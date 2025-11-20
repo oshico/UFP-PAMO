@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PAMO</string>
+    <string name="title_activity_customer_item_detail_detail_host">
+        CustomerItemDetailDetailHostActivity
+    </string>
+    <string name="title_customeritemdetail_list">CustomerItemsDetail</string>
+    <string name="title_customeritemdetail_detail">CustomerItemDetail Detail</string>
+    <string name="customer_name">Customer</string>
+    <string name="add_customer">Add Customer\n</string>
+    <string name="new_patinhas">New Patinhas</string>
+    <string name="new_customer">New Costumer</string>
+    <string name="url">URL:</string>
+    <string name="http_homepage_ufp_pt">http://homepage.ufp.pt</string>
+    <string name="download_test_data_file">Download Test Data File</string>
+    <string name="http_get_response_will_be_shown_here">HTTP GET Response will be shown here…</string>
+</resources>

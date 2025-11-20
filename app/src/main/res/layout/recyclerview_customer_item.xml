@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--
+        TODO: after creating this layout file for RecyclerView items (Customers)...
+            * The default font for RecyclerView items is too small,
+              hence define margin as simple delimiter between items (Customers), using style:
+                * Create styles.xml inside *values* to support
+                    style="@style/customer_title"
+    -->
+    <TextView
+        android:id="@+id/textViewCustomerItem"
+        style="@style/customer_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light" />
+
+</LinearLayout>

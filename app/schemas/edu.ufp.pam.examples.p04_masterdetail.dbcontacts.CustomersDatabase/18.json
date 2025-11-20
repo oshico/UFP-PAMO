@@ -1,0 +1,68 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 18,
+    "identityHash": "75026d7a0e15d06e193160573df0ad52",
+    "entities": [
+      {
+        "tableName": "customers",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`customerid` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `customername` TEXT, `customercompany` TEXT, `customeraddress` TEXT, `customercity` TEXT, `customerphone` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "customerId",
+            "columnName": "customerid",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "customerName",
+            "columnName": "customername",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "customerCompany",
+            "columnName": "customercompany",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "customerAddress",
+            "columnName": "customeraddress",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "customerCity",
+            "columnName": "customercity",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "customerPhone",
+            "columnName": "customerphone",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "customerid"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_customers_customername_customercompany",
+            "unique": false,
+            "columnNames": [
+              "customername",
+              "customercompany"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_customers_customername_customercompany` ON `${TABLE_NAME}` (`customername`, `customercompany`)"
+          }
+        ]
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '75026d7a0e15d06e193160573df0ad52')"
+    ]
+  }
+}

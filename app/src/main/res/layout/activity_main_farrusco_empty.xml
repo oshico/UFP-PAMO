@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".p05_farrusco.MainFarruscoEmptyActivity">
+
+    <TextView
+        android:id="@+id/textViewUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/url"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextUrl"
+        android:layout_width="355dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="398dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textUri"
+        android:text="@string/http_homepage_ufp_pt"
+        app:layout_constraintStart_toStartOf="@+id/textViewUrl"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonDownloadTestFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/download_test_data_file"
+        app:layout_constraintStart_toStartOf="@+id/editTextUrl"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUrl" />
+
+    <TextView
+        android:id="@+id/textViewReply"
+        android:layout_width="360dp"
+        android:layout_height="354dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/http_get_response_will_be_shown_here"
+        app:layout_constraintEnd_toEndOf="@+id/editTextUrl"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextUrl"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDownloadTestFile" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

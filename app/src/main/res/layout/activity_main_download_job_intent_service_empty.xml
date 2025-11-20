@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".p06_someservices.jobintentservice.MainDownloadJobIntentServiceEmptyActivity">
+
+
+    <TextView
+        android:id="@+id/textViewUrl"
+        android:layout_width="64dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="45dp"
+        android:text="@string/url_dowloadintentservice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextUrl"
+        android:layout_width="354dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="33dp"
+        android:ems="10"
+        android:inputType="textUri"
+        android:text="@string/url_dowloadintentservice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewUrl"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUrl" />
+
+    <TextView
+        android:id="@+id/textViewFilename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/filename"
+        app:layout_constraintStart_toStartOf="@+id/editTextUrl"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUrl" />
+
+    <EditText
+        android:id="@+id/editTextFilename"
+        android:layout_width="146dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/data_txt"
+        app:layout_constraintStart_toStartOf="@+id/textViewFilename"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFilename" />
+
+    <Button
+        android:id="@+id/buttonDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/download"
+        app:layout_constraintStart_toStartOf="@+id/editTextFilename"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFilename" />
+
+    <EditText
+        android:id="@+id/editTextFileContent"
+        android:layout_width="343dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/download_content_will_be_shown_here"
+        app:layout_constraintStart_toStartOf="@+id/buttonDownload"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDownload" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

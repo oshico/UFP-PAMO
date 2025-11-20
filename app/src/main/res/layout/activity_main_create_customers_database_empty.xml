@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".p04_masterdetail.maincreatecustomersdb.MainCreateCustomersDatabaseEmptyActivity">
+
+    <!--
+       TODO: Perform the following tasks to complete this layout:
+        1. Create layout file for RecyclerView items (Customers)
+            named *recyclerview_customer_item.xml* inside *layout* directory.
+        2. Add below a RecyclerView widget to show a list of Customer items
+            1.1. Adjust *padding* for Customers visualization:
+                    Add *big_padding* property into *dimens.xml* file inside *values/dimens* dir
+                        <dimen name="big_padding">16dp</dimen>
+   -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCustomerItems"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:listitem="@layout/recyclerview_customer_item"
+        android:padding="@dimen/big_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--
+      TODO: keep performing the following tasks to complete this layout:
+        3. Add FloatingActionButton below to trigger NewCustomerActivity for creating new Customer.
+        4. Also Add new Resource Vector Asset:
+            Right click over *drawable* folder and then...
+                New > Vector Asset... Clip Art... "Add" symbol... Ok > Next > Finish
+        5. Update below FloatingActionButton *contentDescription* and *src* values:
+            android:contentDescription="@string/add_customer"
+            android:src="@drawable/outline_add_24
+    -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_new_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/add_customer"
+        android:src="@drawable/outline_add_24"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
