@@ -13,4 +13,13 @@
     <string name="http_homepage_ufp_pt">http://homepage.ufp.pt</string>
     <string name="download_test_data_file">Download Test Data File</string>
     <string name="http_get_response_will_be_shown_here">HTTP GET Response will be shown here…</string>
+    <string name="title_activity_google_maps">GoogleMapsActivity</string>
+    <string name="url_dowloadintentservice" />
+    <string name="filename" />
+    <string name="data_txt" />
+    <string name="download" />
+    <string name="download_content_will_be_shown_here" />
+    <string name="say_hello" />
+    <string name="call_random_service" />
+    <string name="title_activity_main_compose_clients">MainComposeClientsActivity</string>
 </resources>
